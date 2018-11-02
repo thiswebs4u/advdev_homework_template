@@ -26,6 +26,8 @@ echo "Setting up Nexus in project $GUID-nexus"
 # done
 
 # Ideally just calls a template
-# oc new-app -f ../templates/nexus.yaml --param .....
+oc project jhh-nexus
+oc new-app -f ../templates/jhh-nexus-template.yaml
+#--param .....
 
 # To be Implemented by Student
